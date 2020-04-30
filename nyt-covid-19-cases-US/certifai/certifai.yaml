@@ -1,0 +1,66 @@
+scan:
+  scan_id: b99f5b12b937
+  evaluation_type: atx
+  started: "2020-03-25T19:16:34"
+  ended: "2020-03-26T00:49:14"
+  name: NYT Covid19 Cases - US
+  description: |
+    This evaluation compares the robustness, accuracy and explanations for 4 candidate models. Fairness is not applicable to this use case.
+atx: '75.0'
+components_measured:
+  - completeness
+  - accuracy
+  - provenance
+  - currentness
+  - confidentiality
+  - consistency
+component_scores:
+  completness: 100
+  accuracy: 45
+  provenance: 75
+  currentness: 95
+  confidentiality: 100
+  consistency: 50
+dataset-facts:
+    title: NYT Covid19 Cases - US
+    metadata:
+        filename: /covid-19-data/us-states.csv
+        format: csv
+        url: https://github.com/nytimes/covid-19-data/blob/master/us-states.csv
+        domain: Healthcare
+        keywords: Covid19
+        usecases:
+        - "Intelligent Interventions of a healthcare member"
+        type: Tabular
+        rows: 3040
+        columns: 5
+        missing: 0
+        license: https://github.com/nytimes/covid-19-data/blob/master/LICENSE
+        first_release: 01/01/20
+        updated_date: 26/04/20
+        frequency_of_update: Daily
+        Range:
+        from: 21/01/20
+        to: 26/04/20
+        description: The New York Times is releasing a series of data files with cumulative counts of coronavirus cases in the United States, at the state and county level, over time.
+provenance:
+  source:
+    name: NY Times
+    url: https://www.nytimes.com/
+    email: covid-data@nytimes.com.
+  author:
+    name: NY Times
+    url: https://www.nytimes.com/
+    email: covid-data@nytimes.com.
+fields:
+    date: Date
+    state: State Name
+    fips: Standard Geographic Odentifier
+    cases: No. of Cases
+    deaths: No. of Deaths
+statistic:
+    Ordinal:
+    Nominal:
+    Continious:
+    Discrete:
+status: Completed
